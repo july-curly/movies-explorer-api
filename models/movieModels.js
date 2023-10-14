@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-const validator = require('validator');
-const urlRegexPattern = require('../utils/constants');
+сonst urlRegexPattern = require('../utils/constants');
 
 const movieSchema = new mongoose.Schema({
   country: {
