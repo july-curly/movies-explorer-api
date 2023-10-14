@@ -65,22 +65,10 @@ const movieSchema = new mongoose.Schema({
   nameRU: {
     type: String,
     required: [true, 'Заполните это поле.'],
-    validate: {
-      validator(value) {
-        return validator.isAlpha(value, 'ru-RU');
-      },
-      message: 'Название должно содержать только буквы на русском языке.',
-    },
   },
   nameEN: {
     type: String,
     required: [true, 'Заполните это поле.'],
-    validate: {
-      validator(value) {
-        return validator.isAlpha(value, 'en-US');
-      },
-      message: 'Название должно содержать только буквы на английском языке.',
-    },
   },
 }, { versionKey: false });
 
